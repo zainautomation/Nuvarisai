@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.BASE_PATH || '';
+
 const nextConfig = {
   output: 'export',
-  // BASE_PATH is injected by the GitHub Pages configure-pages action
-  basePath:    process.env.BASE_PATH || '',
-  assetPrefix: process.env.BASE_PATH || '',
+  basePath,
+  assetPrefix: basePath,
+  // Expose basePath to client-side code so <img> tags can prefix correctly
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

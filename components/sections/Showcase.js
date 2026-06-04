@@ -1,5 +1,7 @@
-import Image from 'next/image';
 import { showcaseCards } from '@/lib/data';
+
+// Inlined at build time by Next.js — becomes '/Nuvarisai' on GitHub Pages
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function Showcase() {
   return (
@@ -18,11 +20,11 @@ export default function Showcase() {
           {showcaseCards.map(({ src, alt, tag, delay, title, body, external }) => (
             <div key={tag} className={`showcase-card reveal ${delay}`}>
               <div className="showcase-img-wrap">
-                {external ? (
-                  <img src={src} alt={alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                ) : (
-                  <Image src={src} alt={alt} fill style={{ objectFit: 'cover' }} loading="lazy" unoptimized />
-                )}
+                <img
+                  src={external ? src : `${BASE}${src}`}
+                  alt={alt}
+                  loading="lazy"
+                />
                 <div className="showcase-overlay" />
                 <div className="showcase-img-tag">{tag}</div>
               </div>
