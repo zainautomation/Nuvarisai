@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { showcaseCards } from '@/lib/data';
 
 export default function Showcase() {
@@ -14,10 +15,14 @@ export default function Showcase() {
         </div>
 
         <div className="showcase-grid">
-          {showcaseCards.map(({ src, alt, tag, delay, title, body }) => (
+          {showcaseCards.map(({ src, alt, tag, delay, title, body, external }) => (
             <div key={tag} className={`showcase-card reveal ${delay}`}>
               <div className="showcase-img-wrap">
-                <img src={src} alt={alt} loading="lazy" />
+                {external ? (
+                  <img src={src} alt={alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                ) : (
+                  <Image src={src} alt={alt} fill style={{ objectFit: 'cover' }} loading="lazy" unoptimized />
+                )}
                 <div className="showcase-overlay" />
                 <div className="showcase-img-tag">{tag}</div>
               </div>
