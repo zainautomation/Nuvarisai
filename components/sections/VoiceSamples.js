@@ -49,17 +49,15 @@ function AudioCard({ sample }) {
     <div className={`voice-card reveal ${sample.delay}`}>
       <div className="voice-card-header">
         <span className="voice-industry-tag">{sample.industry}</span>
-        {!sample.src && <span className="voice-soon-badge">Coming Soon</span>}
       </div>
 
       <p className="voice-scenario">{sample.scenario}</p>
 
       <div className="voice-player">
         <button
-          className={`voice-play-btn${!sample.src ? ' voice-play-disabled' : ''}`}
+          className="voice-play-btn"
           onClick={toggle}
           aria-label={playing ? 'Pause' : 'Play'}
-          disabled={!sample.src}
         >
           {playing ? <PauseIcon /> : <PlayIcon />}
         </button>
