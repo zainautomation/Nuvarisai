@@ -23,6 +23,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBar />
+        <VoiceSamples />
         <Problem />
         <Showcase />
         <Features />
@@ -30,7 +31,6 @@ export default function Home() {
         <Industries />
         <Stats />
         <Testimonials />
-        <VoiceSamples />
         <FAQ />
         <CTA />
       </main>
