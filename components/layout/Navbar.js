@@ -55,14 +55,7 @@ export default function Navbar() {
           </ul>
 
           <div className="nav-actions">
-            <a
-              href="tel:9417052283"
-              className="btn btn-outline"
-              style={{ padding: '10px 22px', fontSize: '13px' }}
-            >
-              941-705-2283
-            </a>
-            <a
+            <
               href="https://calendly.com/maya-nuvarisai/30min" target="_blank" rel="noopener noreferrer"
               className="btn btn-dark"
               style={{ padding: '10px 22px', fontSize: '13px' }}
