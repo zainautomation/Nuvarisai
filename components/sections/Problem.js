@@ -91,7 +91,7 @@ export default function Problem() {
               </div>
 
               <div className="calc-cta">
-                <a href="https://calendly.com" className="btn btn-dark btn-full">
+                <a href="https://calendly.com/maya-nuvarisai/30min" target="_blank" rel="noopener noreferrer" className="btn btn-dark btn-full">
                   Stop Losing Revenue <span className="arrow">→</span>
                 </a>
               </div>

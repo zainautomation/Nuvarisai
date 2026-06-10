@@ -12,7 +12,7 @@ export default function CTA() {
             and run their front desk on autopilot. Book your free demo — we&apos;ll have you live in 48 hours.
           </p>
           <div className="cta-buttons">
-            <a href="https://calendly.com" className="btn btn-dark">
+            <a href="https://calendly.com/maya-nuvarisai/30min" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
               Book a Free Demo <span className="arrow">→</span>
             </a>
           </div>

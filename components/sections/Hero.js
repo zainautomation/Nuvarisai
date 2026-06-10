@@ -29,7 +29,7 @@ export default function Hero() {
             </p>
 
             <div className="hero-cta">
-              <a href="https://calendly.com" className="btn btn-dark">
+              <a href="https://calendly.com/maya-nuvarisai/30min" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
                 Book a Free Demo <span className="arrow">→</span>
               </a>
             </div>

@@ -32,7 +32,7 @@ export default function Navbar() {
         ))}
 
         <a
-          href="https://calendly.com"
+          href="https://calendly.com/maya-nuvarisai/30min" target="_blank" rel="noopener noreferrer"
           className="btn btn-dark"
           onClick={closeMobile}
           style={{ marginTop: '8px' }}
@@ -63,7 +63,7 @@ export default function Navbar() {
               941-705-2283
             </a>
             <a
-              href="https://calendly.com"
+              href="https://calendly.com/maya-nuvarisai/30min" target="_blank" rel="noopener noreferrer"
               className="btn btn-dark"
               style={{ padding: '10px 22px', fontSize: '13px' }}
             >
