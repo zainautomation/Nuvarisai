@@ -827,6 +827,8 @@ h1,h2,h3,h4 { line-height:1.12; letter-spacing:-.025em; font-weight:800; }
 .footer-btm-links { display:flex; gap:24px; }
 .footer-btm-links a { font-size:13px; color:rgba(245,244,239,.25); transition:color .2s; }
 .footer-btm-links a:hover { color:rgba(245,244,239,.6); }
+.footer-social-icon { display:flex; align-items:center; color:rgba(245,244,239,.25); transition:color .2s; }
+.footer-social-icon:hover { color:#0A66C2; }
 .footer-logo-name { font-size:17px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--off-white); }
 .footer-logo-name span { color:var(--blue); opacity:1; }
 
